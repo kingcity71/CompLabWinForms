@@ -54,6 +54,10 @@
       <Project>{14F18376-AD97-4330-99FD-F93F270E1BE6}</Project>
       <Name>CompLab.Models</Name>
     </ProjectReference>
+    <ProjectReference Include="..\CompLab.Services\CompLab.Services.csproj">
+      <Project>{C67C3DF8-6068-4095-A006-399546D943F2}</Project>
+      <Name>CompLab.Services</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -1,11 +1,11 @@
 ﻿using System;
 
-namespace CompLab.Models.Entities
+namespace CompLab.Models.XML
 {
-    public class Computer
+    public class ComputerXmlModel
     {
         public Guid Id { get; set; }
         public decimal Price { get; set; }
-        public Computer Next { get; set; }
+        public Guid Next { get; set; }
     }
 }

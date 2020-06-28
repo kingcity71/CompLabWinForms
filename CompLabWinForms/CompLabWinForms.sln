@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CompLab", "CompLab\CompLab.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CompLab.TestConsole", "CompLab.TestConsole\CompLab.TestConsole.csproj", "{83EC22EE-CD94-47CA-8CF2-867B8CF6FD1E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CompLab.Services", "CompLab.Services\CompLab.Services.csproj", "{C67C3DF8-6068-4095-A006-399546D943F2}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{83EC22EE-CD94-47CA-8CF2-867B8CF6FD1E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{83EC22EE-CD94-47CA-8CF2-867B8CF6FD1E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{83EC22EE-CD94-47CA-8CF2-867B8CF6FD1E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C67C3DF8-6068-4095-A006-399546D943F2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C67C3DF8-6068-4095-A006-399546D943F2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C67C3DF8-6068-4095-A006-399546D943F2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C67C3DF8-6068-4095-A006-399546D943F2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

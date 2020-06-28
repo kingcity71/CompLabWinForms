@@ -18,6 +18,7 @@ namespace CompLab.Models.Collections
 
         public bool MoveNext()
         {
+            if (_list.Head == null) return false;
             if (_current.Id == _list.Head.Id && _isFirst)
             {
                 _isFirst = false;
