@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29728.190
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CompLabWinForms", "CompLabWinForms\CompLabWinForms.csproj", "{19A72DAA-2DF3-4999-B812-C7DE2FB6F7B2}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CompLab", "CompLabWinForms\CompLab.csproj", "{19A72DAA-2DF3-4999-B812-C7DE2FB6F7B2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CompLab.Models", "CompLab.Models\CompLab.Models.csproj", "{14F18376-AD97-4330-99FD-F93F270E1BE6}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{19A72DAA-2DF3-4999-B812-C7DE2FB6F7B2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{19A72DAA-2DF3-4999-B812-C7DE2FB6F7B2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{19A72DAA-2DF3-4999-B812-C7DE2FB6F7B2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{14F18376-AD97-4330-99FD-F93F270E1BE6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{14F18376-AD97-4330-99FD-F93F270E1BE6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{14F18376-AD97-4330-99FD-F93F270E1BE6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{14F18376-AD97-4330-99FD-F93F270E1BE6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

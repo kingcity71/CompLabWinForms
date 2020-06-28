@@ -1,4 +1,4 @@
-﻿namespace CompLabWinForms
+﻿namespace CompLab
 {
     partial class Form1
     {
