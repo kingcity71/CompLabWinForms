@@ -1,4 +1,5 @@
 ﻿using CompLab.Models.Entities;
+using System;
 using System.Collections;
 
 namespace CompLab.Models.Collections
@@ -62,6 +63,11 @@ namespace CompLab.Models.Collections
             if (_head.Id == computer.Id)
             {
                 var second = _head.Next;
+                if (second.Id == _head.Id)
+                {
+                    _head = null;
+                    return;
+                }
                 var cur = _head.Next;
                 while (cur.Next.Id != _head.Id)
                     cur = cur.Next;
@@ -84,5 +90,30 @@ namespace CompLab.Models.Collections
             }
         }
         public IEnumerator GetEnumerator() => new ComputerListEnumerator(this);
+        public int Count
+        {
+            get
+            {
+                var count = 0;
+                if (_head == null) return count;
+                var current = _head;
+                while (current.Next.Id != _head.Id)
+                {
+                    current = current.Next;
+                    count++;
+                }
+                return count!=0?++count:count;
+            }
+        }
+
+        public Computer this[Guid id]
+        {
+            get {
+                foreach (Computer comp in this)
+                    if (comp.Id == id)
+                        return comp;
+                return null;
+            }
+        }
     }
 }

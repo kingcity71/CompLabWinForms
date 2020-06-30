@@ -22,8 +22,11 @@ namespace CompLab.Services
         
         public static void CreateComputer(string path, Computer computer)
         {
+            var pathFile = $@"{path}\{computer.Id}.xml";
+            if (File.Exists(pathFile))
+                File.Delete(pathFile);
             var formatter = new XmlSerializer(typeof(ComputerXmlModel));
-            using (var fs = new FileStream($@"{path}\{computer.Id}.xml", FileMode.OpenOrCreate))
+            using (var fs = new FileStream(pathFile, FileMode.OpenOrCreate))
             {
                 var xmlModel = new ComputerXmlModel()
                 {
@@ -93,7 +96,12 @@ namespace CompLab.Services
         public static void DeleteRoom(string root, Room room)
             => Directory.Delete($@"{root}/{room.Num}", true);
         public static void DeleteComputer(string path, Computer computer)
-            => File.Delete($@"{path}\{computer.Id.ToString()}.xml");
+        {
+            var list = ReadComputerList(path);
+            list.Remove(computer);
+            File.Delete($@"{path}\{computer.Id.ToString()}.xml");
+            CreateComputerList(path, list);
+        }
 
         #endregion
     }
